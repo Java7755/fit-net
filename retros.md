@@ -1,8 +1,5 @@
 ## Equipo de Desarrollo
 
-- Santiago (Líder del proyecto)
-- Joaquin (Desarrollador principal)
-- Martin (Diseñadora de interfaz)
 - Javier (Desarrollador principal)
 
 # Retrospectiva del Equipo - Sprint 1, 2, 3, 4, 5, 6, 7, 8.
