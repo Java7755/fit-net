@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(/images/jpg/wepik-export-202308260528110Mst.png);
+    background-image: url(/images/jpg/plancha.jpg);
 } 
 
 .listCompras{
@@ -67,7 +67,8 @@ body{
     left: 25px;
     bottom: 40%;
     font-weight: bold;
-    color: #81008d; /* Color del texto*/
+    /* background-image: url(/images/jpg/bull\ dogs\ \(2\).png); */
+    color: #81008d; Color del texto
     text-shadow: 0px 0px 90px rgb(255, 255, 255); /* Configura la sombra para dar brillo */
 }
 

@@ -5,69 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/executiveStyles.css">
     <link rel="stylesheet" href="/css/header.css">
-    <title>Eventos by Shake it Up!</title>
+    <title>Planes de Entrenamiento!</title>
 </head>
 
-<header> 
+<header>
     <%- include ('parcial/header')%>
 </header>
 <!-- <h3>Eventos by Shake it Up!</h3>  -->
 <body>
     <div class="Container1">
         <a href="/">
-            <div class="imgContainer"> 
-                <img src="images/jpg/shake it up logo.jpg" alt="Logo de Shake it Up">
+            <div class="imgContainer">
+                <img src="/images/jpg/bull dogs 1.png" alt="Logo de Fit-net">
             </div>
         </a>
     <div>
 </div>
     </div>
-    <h1 class="title">Ellos, ya lo hicieron. Vos también podés elegir Shake it Up! </h1>
+    <h1 class="title">Nuestros profesores te estan esperando! </h1>
     <div class="contenedorCarrousel" id="carrouselContainer">
         <ul>
-            <li class="slide"><img src="images\jpg\carrouselPictures\Nico-Vazquez.jpg" alt=""></li>
-            <li class="slide"><img src="images\jpg\carrouselPictures\cristian castro.png" alt=""></li>
-            <li class="slide"><img src="images\jpg\carrouselPictures\MartinBossi.png" alt=""></li>
-            <li class="slide"><img src="images\jpg\carrouselPictures\veronjpg.jpg" alt=""></li>
+            <li class="slide"><img src="\images\jpg\carrouselPictures\FIT - NET - wall.png" alt=""></li>
+            <li class="slide"><img src="\images\jpg\carrouselPictures\PERSONAL - FIT . NET.png" alt=""></li>
+            <li class="slide"><img src="\images\jpg\carrouselPictures\FIT - NET - wally.png" alt=""></li>
+            <li class="slide"><img src="\images\jpg\carrouselPictures\FIT - NET.png" alt=""></li>
+            <li class="slide"><img src="\images\jpg\carrouselPictures\FIT - NET (1).png" alt=""></li>
+            <li class="slide"><img src="\images\jpg\carrouselPictures\FIT - NET (2).png" alt=""></li>
         </ul>
     </div>
 </body>
-<div class="divisorGeneral"> 
-        <div class="TextDivisor"> <h2>~PROPUESTA PERSONALIZADA~</h2> 
+<div class="divisorGeneral">
+        <div class="TextDivisor"> <h2>~PROPUESTA PERSONALIZADA~</h2>
             Realizamos una propuesta totalmente personalizada y ajustada a cualquier presupuesto para que quienes estén interesados puedan contratar nuestros servicios.
-            Seré tu socia, asesora y representante, negociando y/o intermediando con los proveedores para poder conseguir una disminución considerable en el presupuesto inicial.
-            Imaginalo, contalo…. disfrutalo!
+            Generaremos un plan de rutina, iniciaremos un tipo de seguimiento ajustado y acorde a la situacion.
         </div>
-        <div class="TextDivisor"><h2> ~DISEÑAMOS TU EVENTO~</h2>
-            Shake It Up! pone a tu alcance un equipo de profesionales creativos con el único objetivo de diseñar y organizar eventos inolvidables que superen tus expectativas. Nuestro equipo está formado por expertos apasionados en diferentes áreas, como diseño, logística, producción y coordinación, todos trabajando en armonía para garantizar que tu evento sea un éxito.
-        </div>      
+        <div class="TextDivisor"><h2> ~DISEÑAMOS TU PLAN~</h2>
+            De acuerdo a tu objetivo, y en busca de alcanzar esos resultados juntos, DISEÑAMOS tu plan a tu medida.
+        </div>
 </div>
 <div class="title-img-container">
-    <h1>¿Querés saber qué dicen las celebridades de nosotros? Clickeá acá</h1>
+    <h1>¿Querés saber qué dicen nuestros clientes? Clickeá acá</h1>
     <img src="images/jpg/arrow.png" alt="">
 
 </div>
 <form class="famousOpinionForm">
-    <label for="nombreFamoso">Selecciona un famoso:</label>
+    <label for="nombreFamoso">Selecciona un cliente:</label>
     <select id="nombreFamoso" name="nombreFamoso">
-        <option value="JuanSebastianVeron">Juan Sebastián Verón</option>
-        <option value="MartinBossi">Martín Bossi</option>
-        <option value="NicoVazquez">Nico Vázquez</option>
-        <option value="CristianCastro">Cristian Castro</option>
+        <option value="JuanSebastianBresev">Juan Sebastián Bresev</option>
+        <option value="MartinCanteros">Martín Canteros</option>
+        <option value="NicolasMartinez">Nico Martinez</option>
+        <option value="CristianAlvarado">Cristian Alvarado</option>
     </select>
     <button type="button" onclick="mostrarMensaje()">Mostrar Mensaje</button>
 </form>
 
 <!-- Contenedor para mostrar la imagen y el mensaje -->
 <div id="mensajeContainer" style="display: none;">
-    <img id="imagenFamoso" src="" alt="Imagen del famoso">
+    <!-- <img id="imagenFamoso" src="" alt="Imagen del famoso"> -->
     <p id="mensajeFamoso"></p>
 </div>
 
 <script>
     function mostrarMensaje() {
         var nombreFamosoSeleccionado = document.getElementById("nombreFamoso").value;
-        var imagenFamoso = document.getElementById("imagenFamoso");
+        // var imagenFamoso = document.getElementById("imagenFamoso");
         var mensajeFamoso = document.getElementById("mensajeFamoso");
         var mensajeContainer = document.getElementById("mensajeContainer");
 
@@ -82,25 +83,25 @@
         mensajeContainer.style.display = "flex"; // Cambia "block" por "flex"
 
         // Asigna la imagen correspondiente al famoso
-        imagenFamoso.src = "images/jpg/carrouselPictures/" + nombreFamosoSeleccionado + ".jpeg";
+        // imagenFamoso.src = "/" + nombreFamosoSeleccionado + ".jpeg";
 
         // Mensaje personalizado para cada famoso
         var mensaje = "";
         switch (nombreFamosoSeleccionado) {
-            case "JuanSebastianVeron":
-                mensaje = "Juan Sebastián Verón dijo: 'El evento estuvo increíble. La próxima los llamo para organizarlo en el Estadio Único de La Plata o en Old Trafford'";
+            case "JuanSebastianBresev":
+                mensaje = "Juan Sebastián Bresev dijo: 'El plan es increíble. Pague un plan Plata, que me permitio tener acceso a un entrenamiento bien pro, donde estoy consiguiendo mi principal objetivo que es bajar de peso. Voy por musculacion en mi proximo plan.'";
                 break;
-            case "MartinBossi":
-                mensaje = "Martín Bossi dijo: 'Muy lindo todo. Voy a llamarlos para que sirvan tragos con Tinelli en Showmatch.'";
+            case "MartinCanteros":
+                mensaje = "Martín Canteros dijo: 'Muy agitadas las clases. Yo pague el Plan mas alto, el oro. Invite a dos amigos mas y en este caso le pedi a los profes que nos armen una rutina grupal para entrenar en un parque al aire libre, ya que odio los gimnasios. Feliz, estamos haciendo mucho cardio y vemos los resultados, no solo en energia, sino que baje esos 5 kilos de mas que me molestaban.'";
                 break;
-            case "NicoVazquez":
-                mensaje = "Nico Vázquez dijo: 'Gime y yo lo disfrutamos mucho'.";
+            case "Nicolas Martinez":
+                mensaje = "Nico Martinez dijo: 'Pague un Plan Clasico, en mi caso no busco crecer tanto en estructura muscular, sino mas bien tonificar, definir lo que tengo, el profe Javier me armo una rutina excelente y me hizo unas recomendaciones nutricionales que van dando muy buenos resultados.'";
                 break;
-            case "CristianCastro":
-                mensaje = "Cristian Castro dijo: 'Voy a organizar mi cumpleaños siempre con SHAKE IT UP! ¿Pueden ir a Mexico?'";
+            case "CristianAlvarado":
+                mensaje = "Cristian Alvarado dijo: 'Pague el plan oro; yo busco un crecimiento muscular, y vengo creciendo como una bestia. Una buena dieta hipercalorica, basada en proteinas y un buen entrenamiento de fuerza, y eso que vengo de las superseries, estoy mas que satisfecho'";
                 break;
             default:
-                mensaje = "Texto predeterminado.";
+                mensaje = "La rutina va acorde a lo que busco.";
                 break;
         }
 

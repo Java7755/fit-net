@@ -23,13 +23,32 @@
 		<header>
 			<%- include ('parcial/header')%>
 		</header>
+		<style>
+			body {
+				background-image: url(/images/jpg/pectoral.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+				color: rgb(255, 70, 249);
+				position: relative;
+			}
+			
+			body::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.7); /* Ajusta los valores RGBA para el color y la transparencia */
+				z-index: -1;
+			}
+		</style>
 
-		<body style="background-image: url(/images/jpg/gym.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-		color: rgb(255, 70, 249);">
-		<h1 class="text-center mb16 bold" style="color:#0c08f0">FIT - NET</h1>
+		<div style="text-align: center; margin-bottom: 16px;">
+			<img src="/images/jpg/bull dogs 1.png" alt="Logo de FIT-NET" style="max-width: 50%;">
+		</div>
+	
 		<section class="cover fullscreen image-bg overlay parallax">
 		        <!-- <div class="background-image-holder">
 		            <img alt="rescate barra movil" class="background-image" src="/images/jpg/shake.jpg">
@@ -37,7 +56,7 @@
 		        <div class="container v-align-transform">
 		            <div class="row">
 		                <div class="text-center">
-		                    <h2 class="mb16 bold">Entrenate con nuestros Personal Trainers</h2>
+		                    <h2 class="mb16 bold">"PLAN FIT - NET"</h2>
 		            </div>
 		            </div>
 		           </div>
@@ -60,8 +79,8 @@
 						<div class="row">
 							<div class="col-sm-12 text-center">
 								<h4 class="uppercase mb16" style="color: #0c08f0; text-decoration: underline;">"ENTRENAMIENTOS PERSONALIZADOS"</h4>
-								<p class="lead mb64" style="color: #0c08f0;">** Calidad al Mejor Precio **</p> 
-								<div style="color: #fcdf5e;">Seguimientos Personales</div>
+								<!-- <p class="lead mb64" style="color: #0c08f0;">** Calidad al Mejor Precio **</p>  -->
+								<div style="color: #f805d0;">Seguimientos Personales</div>
 							</div>
 						</div>
 									
@@ -76,14 +95,16 @@
 									<!-- Contenido de la fila especial -->
 								</div>
 								<div class="pricing-table pt-2 text-center">
-									<h5 class="uppercase mb16">PLAN CLASICO</h5>								
-									<span class="price" style="color:#0c08f0">$25000 x mes</span>
+									<h3 class="uppercase mb16" style="text-decoration: underline;">PLAN CLASICO</h3>
+							
+									<span class="price" style="color:#fafafa">Desde $25000 x mes</span>
 									<p class="lead">Plan de Entrenamiento Basico</p>
 									<a class="btn btn-white btn-lg btn-filled inner-link" href="https://wa.me/5491131137755" target="_self">LA QUIERO</a>
 									<ul>
 									<div>Seguimiento</div>
 									<div>3 dias x semana</div>
-									<img src="/images/jpg/barra-plata.jpg" alt="Imagen 1" class="imagen-ajustable">
+									<br>
+									<img src="/images/jpg/Plan Clásico.png" alt="Imagen 2" class="imagen-ajustable" style="width: 250px; height: auto;">
 									<div>
 										<br>
 									</div>
@@ -99,15 +120,33 @@
 									<div>
 										<br>
 									</div>
-										<div style="background-color: rgba(0, 0, 0, 0.904);
-										border-radius: 15px;">Si tu deseo es entrenar al aire libre,
-										<div>desde tu casa y/o desde un Gimnasio.</div>
-										<div>Te armamos la rutina a tu medida.</div>
-										<div>Tenes la opcion de despejar tus dudas via whatsApp.</div>
-										<div>Poder enviarnos videos entrenando y te enviamos la correccion de las tecnicas.</div>
-										<div>Si tu objetivo es perdida de peso, tonificar y/o generar musculo, 
-											armamos el plan a tu medida.</div>
-							   
+										<div style="background-color: rgba(50, 48, 56, 0.466);
+										border-radius: 15px;">
+										<div style="text-decoration: underline; color: #fafafa;">Plan Básico de Entrenamiento</div><br>
+											<div>¡Empieza tu viaje hacia una vida más saludable hoy mismo!</div><br>
+											<div>¿Qué incluye nuestro Plan Básico de Entrenamiento?</div><br>
+											
+											<div>Rutinas diseñadas específicamente para tus necesidades y objetivos.</div>
+											<div>Sesiones Semanales: 3 sesiones de entrenamiento por semana, con una duración de 45 minutos cada una.</div><br>
+											<div>Acceso a Contenido Exclusivo: Videos y guías detalladas para mejorar tu técnica y rendimiento.</div><br>
+											<div>Seguimiento de Progreso: Evaluaciones mensuales para monitorear tus avances y ajustar el plan según sea necesario.</div><br>
+											<div>Soporte en Línea: Acceso a un grupo privado de soporte donde podrás resolver dudas y compartir tus experiencias con otros miembros.</div><br>
+											<br><br><br><br><br><br><br><br>
+											<div style="text-decoration: underline; color: #fafafa;">Beneficios de unirse a nuestro Plan Básico:</div><br>
+											
+											<div>Flexibilidad: Entrena en el momento y lugar que más te convenga.</div><br>
+											<div>Motivación Constante: Mantén la motivación con metas claras y alcanzables.</div><br>
+											<div>Resultados Garantizados: Mejora tu condición física y bienestar general de manera efectiva.</div><br>
+											<div>¿Para quién es este plan?</div><br>
+											
+											<div>Nuestro Plan Básico de Entrenamiento está diseñado para principiantes que desean empezar a incorporar el ejercicio en su rutina diaria. Es ideal para quienes buscan mejorar su salud, aumentar su energía y sentirse mejor consigo mismos.</div><br>
+											<br><br><br>
+											<div style="text-transform: uppercase; text-decoration: underline; color: #fafafa;">Precio:</div><br>
+											
+											<div>Plan Mensual: $25000</div><br>
+											<div>Plan Trimestral: $70000 (¡Ahorra $5000!)</div><br>
+											<div>¡Inscríbete ahora y da el primer paso hacia una vida más activa y saludable!</div>
+																	   
 									</ul>
 								</div>
 							  </div>
@@ -117,14 +156,16 @@
 							<div class="columna-2">         
 							<div class="col-sm-6 col-md-4">
 							<div class="pricing-table pt-2 boxed text-center emphasis">
-							    <h5 class="uppercase">PLAN PLATA</h5>
-		                        <span class="price" style="color:#0c08f0">$40000 x mes</span>
+							    <h3 class="uppercase mb16" style="text-decoration: underline;">PLAN PLATA</h3>
+		                        <span class="price" style="color:#fafafa">Desde $40000 x mes</span>
 		                        <p class="lead">Plan Intermedio de 4 dias </p>
 								<a class="btn btn-white btn-lg btn-filled inner-link" href="https://wa.me/5491123398463" target="_self">LA QUIERO</a>
 		                        <ul>
 		                            <div>Seguimiento</div>
 										<div>4 dias x semana</div>
-										<img src="/images/jpg/barra-plata.jpg" alt="Imagen 2" class="imagen-ajustable">
+										<br>
+										<img src="/images/jpg/Plan Plata.png" alt="Imagen 2" class="imagen-ajustable" style="width: 250px; height: auto;">
+
 										<div>
 											<br>
 										</div>
@@ -141,14 +182,34 @@
 									<div>
 									
 									</div>
-									<div style="background-color: rgba(0, 0, 0, 0.788);
-										border-radius: 15px;">Si tu deseo es entrenar al aire libre,
-										<div>desde tu casa y/o desde un Gimnasio.</div>
-										<div>Te armamos la rutina a tu medida.</div>
-										<div>Tenes la opcion de despejar tus dudas via whatsApp.</div>
-										<div>Poder enviarnos videos entrenando y te enviamos la correccion de las tecnicas.</div>
-										<div>Si tu objetivo es perdida de peso, tonificar y/o generar musculo, 
-											armamos el plan a tu medida.</div>
+									<div style="background-color: rgba(50, 48, 56, 0.466);
+										border-radius: 15px;"><div style="text-decoration: underline; color: #fafafa;">Plan Plata Intermedio de Entrenamiento</div><br>
+<div>¡Lleva tu entrenamiento al siguiente nivel con nuestro Plan Plata Intermedio!</div><br>
+<div>¿Qué incluye nuestro Plan Plata Intermedio de Entrenamiento?</div><br>
+
+<div>Rutinas avanzadas diseñadas específicamente para tus necesidades y objetivos.</div>
+<div>Sesiones Semanales: 4 sesiones de entrenamiento por semana, con una duración de 60 minutos cada una.</div><br>
+<div>Acceso a Contenido Exclusivo: Videos y guías detalladas para mejorar tu técnica y rendimiento.</div><br>
+<div>Seguimiento de Progreso: Evaluaciones quincenales para monitorear tus avances y ajustar el plan según sea necesario.</div><br>
+<div>Soporte en Línea: Acceso a un grupo privado de soporte donde podrás resolver dudas y compartir tus experiencias con otros miembros.</div><br>
+<div>Planificación Nutricional: Asesoramiento mensual para optimizar tu dieta y mejorar tus resultados.</div><br>
+<br><br><br><br>
+<div style="text-decoration: underline; color: #fafafa;">Beneficios de unirse a nuestro Plan Plata:</div><br>
+
+<div>Mayor Flexibilidad: Entrena en el momento y lugar que más te convenga.</div><br>
+<div>Motivación Constante: Mantén la motivación con metas claras y alcanzables.</div><br>
+<div>Resultados Mejorados: Mejora tu condición física y bienestar general de manera más efectiva.</div><br>
+
+<div>¿Para quién es este plan?</div><br>
+
+<div>Nuestro Plan Plata Intermedio de Entrenamiento está diseñado para personas con experiencia previa en el entrenamiento que desean intensificar su rutina y alcanzar nuevos objetivos. Es ideal para quienes buscan mejorar su rendimiento, aumentar su fuerza y resistencia, y llevar su salud y bienestar al siguiente nivel.</div><br>
+<br>
+<div style="text-transform: uppercase; text-decoration: underline; color: #fafafa;">Precio:</div><br>
+
+<div>Plan Mensual: $40000</div><br>
+<div>Plan Trimestral: $110000 (¡Ahorra $10000!)</div><br>
+<div>¡Inscríbete ahora y da el siguiente paso hacia una vida más activa y saludable!</div>
+
 	                           	                            
 		                        </ul>
 		                    </div>		                    
@@ -159,14 +220,16 @@
 						<div class="columna-3">         
 						<div class="col-sm-6 col-md-4">
 		                    <div class="pricing-table pt-2 text-center">
-		                        <h5 class="uppercase">PLAN ORO</h5>
-		                        <span class="price" style="color:#0c08f0">$75000 x mes</span>
+		                        <h3 class="uppercase mb16" style="text-decoration: underline;">PLAN ORO</h3>
+		                        <span class="price" style="color:#fafafa">Desde $75000 x mes</span>
 		                        <p class="lead">¡Para exigentes!</p>
 		                        <a class="btn btn-white btn-lg btn-filled inner-link" href="https://wa.me/5491123398463" target="_self">LA QUIERO</a>
 		                        <ul>
 		                            <div>Seguimiento</div>
 		                            <div>5 o 6 dias x mes</div>
-									<img src="/images/jpg/barra-vip.jpg" alt="Imagen 2" class="imagen-ajustable">
+									<br>
+									<img src="/images/jpg/Plan Oro.png" alt="Imagen 2" class="imagen-ajustable" style="width: 250px; height: auto;">
+
 									<div>
 										<br>
 									</div>
@@ -181,14 +244,35 @@
 									<div>
 										<br>
 									</div>
-									<div style="background-color: rgba(0, 0, 0, 0.603);
-										border-radius: 15px;"> Si tu deseo es entrenar al aire libre,
-										<div>desde tu casa y/o desde un Gimnasio.</div>
-										<div>Te armamos la rutina a tu medida.</div>
-										<div>Tenes la opcion de despejar tus dudas via whatsApp.</div>
-										<div>Poder enviarnos videos entrenando y te enviamos la correccion de las tecnicas.</div>
-										<div>Si tu objetivo es perdida de peso, tonificar y/o generar musculo, 
-											armamos el plan a tu medida.</div>
+									<div style="background-color: rgba(50, 48, 56, 0.466);
+										border-radius: 15px;"> <div style="text-decoration: underline; color: #fafafa;">Plan Oro de Entrenamiento</div><br>
+<div>¡Alcanza tu máximo potencial con nuestro exclusivo Plan Oro de Entrenamiento!</div><br>
+<div>¿Qué incluye nuestro Plan Oro de Entrenamiento?</div><br>
+
+<div>Rutinas de alto rendimiento diseñadas específicamente para tus necesidades y objetivos.</div>
+<div>Sesiones Semanales: 5 sesiones de entrenamiento por semana, con una duración de 90 minutos cada una.</div><br>
+<div>Acceso a Contenido Premium: Videos y guías detalladas para mejorar tu técnica y rendimiento.</div><br>
+<div>Seguimiento de Progreso: Evaluaciones semanales para monitorear tus avances y ajustar el plan según sea necesario.</div><br>
+<div>Soporte Personalizado: Acceso a un entrenador personal y a un grupo privado de soporte donde podrás resolver dudas y compartir tus experiencias con otros miembros.</div><br>
+<div>Planificación Nutricional Avanzada: Asesoramiento semanal para optimizar tu dieta y maximizar tus resultados.</div><br>
+<div>Sesiones de Recuperación: Incluye sesiones de estiramiento y masajes deportivos para mejorar la recuperación y evitar lesiones.</div><br>
+
+<div style="text-decoration: underline; color: #fafafa;">Beneficios de unirse a nuestro Plan Oro:</div><br>
+
+<div>Flexibilidad Total: Entrena en el momento y lugar que más te convenga.</div><br>
+<div>Motivación Constante: Mantén la motivación con metas claras y alcanzables.</div><br>
+<div>Resultados Excepcionales: Mejora tu condición física y bienestar general de manera significativamente efectiva.</div><br>
+
+<div>¿Para quién es este plan?</div><br>
+
+<div>Nuestro Plan Oro de Entrenamiento está diseñado para personas exigentes que ya tienen experiencia previa en el entrenamiento y desean llevar su rendimiento al máximo nivel. Es ideal para quienes buscan superar sus límites, mejorar su fuerza y resistencia, y alcanzar un bienestar óptimo.</div><br>
+<br><br>
+<div style="text-transform: uppercase; text-decoration: underline; color: #fafafa;">Precio:</div><br>
+
+<div>Plan Mensual: $75000</div><br>
+<div>Plan Trimestral: $215000 (¡Ahorra $10000!)</div><br>
+<div>¡Inscríbete ahora y transforma tu vida con nuestro Plan Oro de Entrenamiento!</div>
+
 		                            
 		                        </ul>
 		                    </div>		                    
@@ -207,7 +291,7 @@
 		                    <div class="feature bordered text-center bg-secondary">
 		                        
 		                        <div class="mb40">
-		                            <h6 class="mb8 uppercase">CONDICIONES Y FORMAS DE PAGO</h6>
+									<h3 class="mb8 uppercase" style="text-decoration: underline; color: #fafafa;">CONDICIONES Y FORMAS DE PAGO</h3>
 		                            <p>A TRAVES:&nbsp;<br>Mercado Pago, Transferencia, Efectivo y otros.<br><br>DURACIÓN:<br>1 hs x dia / semana<br><br>REQUISITOS DE CONTRATACIÓN:<br>El pago mensual es exigencia para el Entrenamiento<br><br>RECOMENDACIONES NUTRICIONALES:<br>Si sos Plata y Oro, pedi tu RECOMENDACION NUTRICIONAL.</p>
 		                        </div>
 		                        
@@ -217,9 +301,9 @@
 		                </div>
 		                <div class="col-md-6 col-md-pull-6">
 		                    <div class="feature bordered hidden-xs hidden-sm">
-		                        <h2 class="mb64 mb-xs-24">Llevamos la diversión estés donde estés!</h2>
+		                        <h2 class="mb64 mb-xs-24" style="text-decoration:underline; color:#1606f7">Te acercamos el plan estes donde estes!</h2>
 		                        <p>
-		                            <strong>* Todas las barras incluyen gaseosas libres<br>* Ofrecemos un servicio atendido por bartenders profesionales<br></strong>
+		                            <strong>* Todos los planes incluyen un seguimiento<br>* Ofrecemos servicios personalizados a tu medida<br></strong>
 		                        </p>
 		                        
 		                    </div>
@@ -235,33 +319,34 @@
 		        <div class="container">
 		            <div class="row mb64 mb-xs-24">
 		                <div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
-		                    <h3>Lo Que Dicen Nuestros Clientes</h3>
-		                </div>
-		            </div>
-		            
+							<h3 style="text-decoration: underline; font-family: 'TuFuenteEspecial', sans-serif;">La satisfacción de los clientes:</h3>
+						</div>
+						</div>
+						<br>
+						<br>
 		            <div class="row">
 		                <div class="col-sm-4 text-center">
 		                    <div class="feature boxed cast-shadow-light"> 
-		                        <img alt="Cliente de pizza party" class="image-small inline-block mb24" src="/images/jpg/modelo.jpg">
-		                        <h4>"Bartenders profesionales"</h4>
-		                        <p>Los mejores tragos del mundo los tiene OnTheRoad. Son un lujo y además incluyen bebidas sin alcohol para niños.<br></p>
+		                        <img alt="Cliente de pizza party" class="image-small inline-block mb24" src="/images/jpg/Eliana Gonzalez.png" style="width: 250px; height: auto;">
+		                        <h4>"Profesores profesionales"</h4>
+		                        <p>Los mejores Personal, muy recomendados.<br></p>
 		                        <span><b>Eliana Gonzalez</b></span>
 		                    </div>
 		                </div>
 		                <div class="col-sm-4 text-center">
 		                    <div class="feature boxed cast-shadow-light">
-		                        <img alt="Cliente de pizza party 1" class="image-small inline-block mb24" src="/images/jpg/bar-noosa.jpg">
+		                        <img alt="Cliente de pizza party 1" class="image-small inline-block mb24" src="/images/jpg/Pablo Mirantes.png" style="width: 250px; height: auto;">
 		                        <h4>"Una verdadera fiesta"</h4>
 		                        <p>
-		                            Contratamos barras móviles para una fiesta electronica y la buena onda que tenían colaboró para sea la noche.<br></p>
-		                        <span><b>Pablo Almeyda</b></span>
+		                            Comence con 3 dias por semana, y aumente a 4, me encantan las rutinas que ofrecen.<br></p>
+		                        <span><b>Pablo Mirante</b></span>
 		                    </div>
 		                </div><div class="col-sm-4 text-center">
 		                    <div class="feature boxed cast-shadow-light">
-		                        <img alt="Cliente de pizza party 2" class="image-small inline-block mb24" src="/images/jpg/neymar.jpg">
+		                        <img alt="Cliente de pizza party 2" class="image-small inline-block mb24" src="/images/jpg/Jose Alvarez.png" style="width: 250px; height: auto;">
 		                        <h4>"Servicio de 10"</h4>
-		                        <p>Muy buen servicio de barra GOLD, los mejores tragos, excelente onda. Recomendados!</p>
-		                        <span><strong>Neymar Jr</strong></span>
+		                        <p>Lo recomiendo, Los profes estan detras de todo, me siento muy comodo con la rutina y el plan alimentario!</p>
+		                        <span><strong>Jose Alvarez</strong></span>
 		                    </div>
 		                </div>
 		                
@@ -275,23 +360,24 @@
 				<div class="container">
 					<div class="row mb64 mb-xs-32">
 						<div class="col-md-5 text-right text-left-xl">
-							<h2 class="uppercase bold italic">DEJANOS CONVERTIR TU EVENTO EN LO MAS DESEADO</h2>
+							<h2 class="uppercase bold italic">CONVERTI TU CUERPO</h2>
 						</div>
 						<div class="col-md-2 hidden-sm hidden-xs text-center pt48">
 							<i class="icon display-block fa fa-thumbs-o-up icon-lg"></i>
 						</div>
 						<div class="col-md-5 col-sm-6">
-							<p class="lead">Estamos listos para llevar tu barra!</p>
-							<h4 class="mb8">Móvil: <a style="color: black;" >11 3113-7755</a>
+							<p class="lead">Estamos listos para comenzar con tu PLAN!</p>
+							<h4 class="mb8">Móvil: <a style="color: black;" >11 3113-7755 / 11 2339-8463</a>
 		<br>Whatsapp: <a style="color: black;" href="https://wa.me/5491131137755">11 3113-7755</a>
-		<br>Email: <a style="color: black;" href="mailto:promociones@shakeitup.com.ar">promociones@shakeitup.com.ar</a>
+		<br>Whatsapp: <a style="color: black;" href="https://wa.me/5491123398463">11 2339-8463</a>
+		<br>Email: <a style="color: black;" href="mailto:personal.fit@gmail.com">personal.fit@gmail.com</a>
 		<br></h4>									
-							<h4 class="mb0">IG: <a style="color: black;" href="https://www.instagram.com/shakeitup_oficial/" rel="noopener,noreferrer,nofollow">@shake_itup</a></h4>
+							<h4 class="mb0">IG: <a style="color: black;" href="https://www.instagram.com/personal.fit-net/" rel="noopener,noreferrer,nofollow">@personal.fit-net</a></h4>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
-							<p class="fade-1-4">La barra mas buscada © 2023 | San Miguel, Buenos Aires | Argentina <a href="https://shakeitup.com.ar/blog-de-notas/">Blog</a></p>
+							<p class="fade-1-4">Los planes mas buscados © 2024 | San Miguel, Buenos Aires | Argentina <a href="https://shakeitup.com.ar/blog-de-notas/">Blog</a></p>
 						</div>
 					</div>
 				</div>
