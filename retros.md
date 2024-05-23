@@ -1,6 +1,6 @@
 ## Equipo de Desarrollo
 
-- Javier (Desarrollador principal)
+- Javier (Desarrollador principal) - jaja
 
 # Retrospectiva del Equipo - Sprint 1, 2, 3, 4, 5, 6, 7, 8.
 
