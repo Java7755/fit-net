@@ -49,7 +49,7 @@ const apiProducts = require("./src/routes/api/apiProducts");
 const apiusers = require("./src/routes/api/apiUsers");
 const apiPostulants = require('./src/routes/API/apiPostulants');
 app.listen(PORT, () => {
-    console.log(`Servidor escuchando en puerto ${PORT}`);
+    console.log(`Servidor escuchando en puerto ${PORT}`)
   });
 
 // app.use(session({ secret: "Secreto" }));
