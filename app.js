@@ -1,12 +1,19 @@
-const express = require("express");
-const path = require("path");
+const express = require('express');
+const path = require('path');
 const cors = require('cors')
 const app = express();
-const PORT= process.env.PORT || 3002
-const methodoverride = require("method-override");
-const morgan = require("morgan");
-const session = require("express-session");
+const PORT= process.env.PORT || 3002;
+const methodoverride = require('method-override');
+const morgan = require('morgan');
+const session = require('express-session');
 const dotenv = require("dotenv").config();
+
+app.use(session({
+    secret: 'your_secret_key',
+    resave: false, // Añade esta opción
+    saveUninitialized: true, // Añade esta opción
+    cookie: { secure: true }
+  }));
 
 app.use(express.static("public"))
 app.use(express.urlencoded({extended:false})) //nos permite capturar la informacion que viene por req.body en controllerRegister
@@ -19,10 +26,10 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 
-app.use(methodoverride("_method"));
+app.use(methodoverride('_method'));
 
-const homeRouter = require("./src/routes/homeRoutes")
-app.use("/", homeRouter)
+const homeRoutes = require('./src/routes/homeRoutes');
+app.use('/', homeRoutes);
 
 
 const adminFormRoutes = require("./src/routes/adminFormRoutes");
@@ -41,10 +48,11 @@ const executive = require("./src/routes/executiveRoutes");
 const apiProducts = require("./src/routes/api/apiProducts");
 const apiusers = require("./src/routes/api/apiUsers");
 const apiPostulants = require('./src/routes/API/apiPostulants');
-app.listen(PORT , () =>
-console.log(`Servidor escuchando en puerto ${PORT}`));
+app.listen(PORT, () => {
+    console.log(`Servidor escuchando en puerto ${PORT}`);
+  });
 
-app.use(session({ secret: "Secreto" }));
+// app.use(session({ secret: "Secreto" }));
 app.use('/avatars', express.static(path.join(__dirname, 'public/images/avatars/default')));
 
 app.use(adminFormRoutes);
