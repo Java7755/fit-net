@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const cors = require('cors')
 const app = express();
-const PORT= process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;  // Usa el puerto proporcionado por Render, o el 3000 si no está definido.
 const methodoverride = require('method-override');
 const morgan = require('morgan');
 const session = require('express-session');
@@ -48,11 +48,11 @@ const executive = require("./src/routes/executiveRoutes");
 
 const apiProducts = require('./src/routes/API/apiProducts');
 
-const apiusers = require("./src/routes/api/apiUsers");
+const apiUsers = require("./src/routes/API/apiUsers");
 const apiPostulants = require('./src/routes/API/apiPostulants');
 app.listen(PORT, () => {
-    console.log(`Servidor escuchando en puerto ${PORT}`);
-  });
+  console.log(`Servidor escuchando en puerto ${PORT}`);
+});
 
 // app.use(session({ secret: "Secreto" }));
 app.use('/avatars', express.static(path.join(__dirname, 'public/images/avatars/default')));
@@ -72,7 +72,7 @@ app.use(executive)
 app.use(tragosRoutes);
 
 app.use('/api/products', apiProducts);
-app.use("/api/users", apiusers);
+app.use("/api/users", apiUsers);
 app.use('/api/postulants',apiPostulants);
 
 
