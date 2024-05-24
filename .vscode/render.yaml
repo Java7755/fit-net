@@ -1,8 +1,11 @@
-# services:
-#   - type: web
-#     name: register_login
-#     env: node
-#     startCommand: nodemon app.js
-#     envVars:
-#       - key: PORT
-#         value: "3002"
+# Exported from Render on 2024-05-24T17:10:15Z
+services:
+- type: web
+  name: fitnet
+  runtime: node
+  repo: https://github.com/Java7755/fit-net
+  plan: free
+  region: oregon
+  buildCommand: npm install
+  startCommand: npm run dev
+version: "1"
