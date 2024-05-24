@@ -46,7 +46,7 @@ const users = require("./src/routes/usersRoutes");
 const shop = require("./src/routes/shopRoutes");
 const executive = require("./src/routes/executiveRoutes");
 
-const apiProducts = require('./src/routes/api/apiProducts');
+const apiProducts = require('./src/routes/API/apiProducts');
 
 const apiusers = require("./src/routes/api/apiUsers");
 const apiPostulants = require('./src/routes/API/apiPostulants');
