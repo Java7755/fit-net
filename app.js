@@ -45,7 +45,9 @@ const cookies = require("./src/routes/cookies");
 const users = require("./src/routes/usersRoutes");
 const shop = require("./src/routes/shopRoutes");
 const executive = require("./src/routes/executiveRoutes");
-const apiProducts = require("./src/routes/api/apiProducts");
+
+const apiProducts = require('./src/routes/api/apiProducts');
+
 const apiusers = require("./src/routes/api/apiUsers");
 const apiPostulants = require('./src/routes/API/apiPostulants');
 app.listen(PORT, () => {
@@ -68,8 +70,9 @@ app.use(users);
 app.use(shop);
 app.use(executive)
 app.use(tragosRoutes);
-app.use('/api/products', apiProducts)
-app.use("/api/users", apiusers)
+
+app.use('/api/products', apiProducts);
+app.use("/api/users", apiusers);
 app.use('/api/postulants',apiPostulants);
 
 
