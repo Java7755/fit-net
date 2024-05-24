@@ -48,7 +48,7 @@ const executive = require("./src/routes/executiveRoutes");
 
 const apiProducts = require('./src/routes/API/apiProducts');
 
-const apiUsers = require("./src/routes/API/apiUsers");
+const apiusers = require("./src/routes/api/apiUsers");
 const apiPostulants = require('./src/routes/API/apiPostulants');
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en puerto ${PORT}`);
@@ -71,9 +71,9 @@ app.use(shop);
 app.use(executive)
 app.use(tragosRoutes);
 
-app.use('/API/products', apiProducts);
-app.use("/API/users", apiUsers);
-app.use('/API/postulants',apiPostulants);
+app.use('/api/products', apiProducts);
+app.use("/api/users", apiusers);
+app.use('/api/postulants',apiPostulants);
 
 
 app.use((req,res,next)=>{
