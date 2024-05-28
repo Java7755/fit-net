@@ -1,12 +1,15 @@
 const express = require('express');
 const path = require('path');
-const cors = require('cors')
+
+const cors = require('cors');
 const app = express();
-const PORT = process.env.PORT || 3000;  // Usa el puerto proporcionado por Render, o el 3000 si no está definido.
+const PORT = process.env.PORT || 3001;  // Usa el puerto proporcionado por Render, o el 3002 si no está definido.
 const methodoverride = require('method-override');
 const morgan = require('morgan');
 const session = require('express-session');
 const dotenv = require("dotenv").config();
+
+
 
 app.use(session({
     secret: 'your_secret_key',
@@ -23,8 +26,6 @@ app.use(cors());
 app.use(morgan('dev'));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-
-
 
 app.use(methodoverride('_method'));
 

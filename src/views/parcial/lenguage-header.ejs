@@ -1,0 +1,10 @@
+<!-- views/includes/language-header.ejs -->
+<div class="language-selector">
+    <form action="/change-language" method="post">
+        <select name="language" onchange="this.form.submit()">
+            <option value="es" <% if (lang === 'es') { %>selected<% } %>>Español</option>
+            <option value="en" <% if (lang === 'en') { %>selected<% } %>>English</option>
+            <option value="it" <% if (lang === 'it') { %>selected<% } %>>Italian</option>
+        </select>
+    </form>
+</div>
