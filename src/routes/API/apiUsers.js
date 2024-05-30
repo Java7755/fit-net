@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const apiUsersControllers = require('../../controllers/api/apiUsersControllers');
+
+const apiUsersControllers = require('../../controllers/API/apiUsersControllers');
+
+
 
 //Todos los productos//
 router.get('/', apiUsersControllers.index);

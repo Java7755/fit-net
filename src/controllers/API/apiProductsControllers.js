@@ -1,4 +1,4 @@
-const { Productos } = require('../../database/models');
+// const { Productos } = require('../../database/models');
 const {Op} = require('sequelize');
 
 // module.exports = {
