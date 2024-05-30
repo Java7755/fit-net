@@ -38,16 +38,16 @@ const forgotpswdRoutes = require("./src/routes/forgotpswdRoutes");
 const indexRoutes = require("./src/routes/indexRoutes");
 const listRoutes = require("./src/routes/listRoutes");
 const loginRoutes = require("./src/routes/loginRoutes");
-const productsRoutes = require("./src/routes/productsRoutes");
+// const productsRoutes = require("./src/routes/productsRoutes");
 const registerRoutes = require("./src/routes/registerRoutes");
 const contactsRoutes = require("./src/routes/contactsRoutes");
-const tragosRoutes = require("./src/routes/tragos");
+// const tragosRoutes = require("./src/routes/tragos");
 const cookies = require("./src/routes/cookies");
 const users = require("./src/routes/usersRoutes");
-const shop = require("./src/routes/shopRoutes");
+// const shop = require("./src/routes/shopRoutes");
 const executive = require("./src/routes/executiveRoutes");
 
-const apiProducts = require('./src/routes/API/apiProducts');
+// const apiProducts = require('./src/routes/API/apiProducts');
 
 const apiUsers = require("./src/routes/API/apiUsers");
 const apiPostulants = require('./src/routes/API/apiPostulants');
@@ -64,15 +64,15 @@ app.use(forgotpswdRoutes);
 app.use(indexRoutes);
 app.use(listRoutes);
 app.use(loginRoutes);
-app.use(productsRoutes);
+// app.use(productsRoutes);
 app.use(registerRoutes);
 app.use(cookies);
 app.use(users);
-app.use(shop);
+// app.use(shop);
 app.use(executive)
-app.use(tragosRoutes);
+// app.use(tragosRoutes);
 
-app.use('/api/products', apiProducts);
+// app.use('/api/products', apiProducts);
 app.use("/api/users", apiUsers);
 app.use('/api/postulants',apiPostulants);
 

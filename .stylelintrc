@@ -1,0 +1,20 @@
+{
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-prettier"
+    ],
+    "plugins": [
+      "stylelint-order",
+      "stylelint-csstree-validator"
+    ],
+    "rules": {
+      "indentation": 2,
+      "number-leading-zero": "always",
+      "string-quotes": "double",
+      "color-hex-case": "lower",
+      "color-hex-length": "short",
+      "order/properties-alphabetical-order": true,
+      "csstree/validator": true
+    }
+  }
+  
