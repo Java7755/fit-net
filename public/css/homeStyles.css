@@ -771,25 +771,20 @@ button{
         
 }
 
-/*Small tablets*/
-@media (min-width: 768px) and (max-with: 991px){
-    /*styles*/
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px){
 }
 
-/*large tablets/laptops*/
-@media (min-width: 992px) and   (max-width: 1199px){
-    /*styles */
+
+/*Small tablets*/
+@media (min-width: 768px) and (max-width: 1024px){
 }
+
 
 /*Desktops*/
-@media (min-width: 1200) and (max-width: 1919px){
-    /*styles*/
+@media (min-width: 1025px){
 }
 
-/* Extra large screens */
-@media (min-width: 1920px) {
-    /* styles */
-}
 
 /* homeStyles.css */
 
