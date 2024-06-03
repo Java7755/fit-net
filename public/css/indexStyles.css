@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,6 +12,12 @@
   box-sizing: border-box;
 }
 
+.container {
+  position: fixed;
+  top: 50px; /* ajusta según sea necesario */
+  left: 50px; /* ajusta según sea necesario */
+}
+
 div.block-div {
   display: block;
   height: 458px;
@@ -20,40 +26,59 @@ div.block-div {
   border: 1px solid #000; /* Añade un borde si lo deseas */
 }
 
-.columna-1 {
-  box-sizing: border-box;
-  display: block;
-  height: 458px;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 0px;
-  position: relative;
-  width: 257px;
+.row {
+  display: flex;
+  justify-content: center; /* Centra las columnas horizontalmente */
 }
 
-/* Columna 2 */
-.columna-2 {
-  box-sizing: border-box;
-  display: block;
-  height: 458px;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 0px;
-  position: relative;
-  width: 257px;
-}
-
-/* Columna 3 */
+.columna-1,
+.columna-2,
 .columna-3 {
   box-sizing: border-box;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
   height: 458px;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 0px;
   position: relative;
-  width: 257px;
+  width: 237px; /* Ancho fijo para las columnas */
+  margin-left: 10px; /* Espacio entre las columnas */
+}
+
+@media (min-width: 768px) {
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+/*Small tablets*/
+@media (min-width: 768px) and (max-with: 991px){
+  /*styles*/
+}
+
+/*large tablets/laptops*/
+@media (min-width: 992px) and   (max-width: 1199px){
+  /*styles */
+}
+
+/*Desktops*/
+@media (min-width: 1200) and (max-width: 1919px){
+  /*styles*/
+}
+
+/* Extra large screens */
+@media (min-width: 1920px) {
+  /* styles */
 }
