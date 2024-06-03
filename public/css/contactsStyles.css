@@ -20,15 +20,18 @@
     text-decoration-color: white;
 }
 
-body{
+body {
     height: 1000px;
     width: 1000px;
     margin: 0; /* Elimina cualquier margen predeterminado */
-    background-image: url(/images/jpg/pectoral.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/jpg/pectoral.jpg);
     background-position: center center;
     background-size: cover;
     padding: 35px;
+    color: #fff; /* Asegura que el texto sea luminoso y legible */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Añade un pequeño sombreado para mejorar la legibilidad */
 }
+
 
 .container-form h2{
     text-decoration-color: white;
@@ -89,4 +92,22 @@ body{
 }
 .container-form .btn-enviar:hover{
     background: #e4a9bf;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px){
+}
+
+/* Estilos para tablets y iPads */
+@media (min-width: 1024px) and (max-width: 1279px) {
+}
+
+
+/*Small tablets*/
+@media (min-width: 768px) and (max-width: 1024px){
+}
+
+
+/*Desktops*/
+@media (min-width: 1025px){
 }
