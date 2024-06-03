@@ -77,8 +77,12 @@ section {
   margin: 1rem;
 }
 
+/*Desktops*/
+@media (min-width: 1025px){
+}
+
 /* Media Queries para dispositivos móviles */
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   header nav ul {
       flex-direction: column;
       align-items: center;
@@ -90,7 +94,7 @@ section {
 }
 
 /* Media Queries para tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
   header nav ul {
       justify-content: space-between;
   }
